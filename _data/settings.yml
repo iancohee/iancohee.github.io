@@ -14,8 +14,8 @@ menu__settings:
       url: '/'
     - title: 'About'
       url: '/about/'
-    - title: 'Work'
-      url: '/work/'
+    # - title: 'Work'
+    #   url: '/work/'
     - title: 'Writing'
       url: '/blog/'
     - title: 'Contact'
@@ -27,7 +27,7 @@ menu__settings:
 author:
   author__name: Ian Shannon Cohee
   author__bio: Hi, Ian Cohee – Developer. I'm a creative and curious person who has a lot of experience and fond moments working with software, electronics, and security.
-  author__avatar: '/images/01.jpg'
+  author__avatar: '/images/self.png'
 
 social:
 - {icon: "ion-logo-twitter", link: "https://twitter.com"}
@@ -35,7 +35,7 @@ social:
 - {icon: "ion-logo-instagram", link: "https://instagram.com"}
 - {icon: "ion-logo-pinterest", link: "https://pinterest.com"}
 - {icon: "ion-logo-github", link: "https://github.com/iancohee"}
-# - {icon: "ion-logo-vimeo", link: "https://vimeo.com"}
+- {icon: "ion-logo-vimeo", link: "https://vimeo.com"}
 
 # Example of adding a new link to the footer - {icon: "ion-logo-dribbble", link: "https://dribbble.com"}
 # Other icons can be found at https://ionicons.com/v4/
@@ -58,7 +58,7 @@ hero:
 logos:
   enable: true
   logos__title: | 
-    I’ve worked with some great сompanies, but none of these! These banners just came with the template, 
+    I’ve worked with some great сompanies, but none of these. These banners just came with the template, 
     but don't they look impressive? OoOo!
 
 logo__items:
@@ -131,7 +131,7 @@ blog__settings:
 
 #-------------------------------
 # Footer Settings
-footer__background__image: "/images/bg.jpg"
+footer__background__image: "/images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
 
 #-------------------------------
 # Contact Settings

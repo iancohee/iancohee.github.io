@@ -1,9 +1,9 @@
 ---
 layout: page
 title: About
-description: I am me (this picture is NOT though). He is handsome though. Lucky bastard.
+description: I am me.
 permalink: /about/
-image: '/images/01-2.jpg'
+image: '/images/self.png'
 image_caption: 'Photo by [Bruce Dixon](https://unsplash.com/photos/3M9WJQVHzog) on [Unsplash](https://unsplash.com/)'
 ---
 
