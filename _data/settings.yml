@@ -131,13 +131,13 @@ blog__settings:
 
 #-------------------------------
 # Footer Settings
-footer__background__image: "/images/adi-goldstein-EUsVwEOsblE-unsplash.jpg"
+footer__background__image: "/images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg"
 
 #-------------------------------
 # Contact Settings
 contact:
   email: ian@cohee.website # Add your form_id
-  description:  Right now this form doesn't work 🙃. # Add a description of your form
+  description:  Right now this form doesn't work 🙃. Just email me, ian [at] cohee {dot} website # Add a description of your form
 
 # NOTE
 # Akio theme comes with a contact form built-in. You can use this form with Formspree (https://formspree.io/) service and get up to 50 submissions for free. Also, you can easily switch to another service if you want.
