@@ -140,7 +140,7 @@ ssize_t read(int fd, void buf[.count], size_t count);
 ```
 
 The parameters are
-1. fd, the file descriptor, which is `0` in your program for `stdin`
+1. fd, the file descriptor, which is `0` in the program for `stdin`
 2. buf, the destination buffer
 3. count, how many bytes to read. Important to get correct, sometimes.
 
