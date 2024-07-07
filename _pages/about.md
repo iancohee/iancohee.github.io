@@ -4,7 +4,7 @@ title: About
 description: I am me.
 permalink: /about/
 image: '/images/self.png'
-image_caption: 'Photo by [Bruce Dixon](https://unsplash.com/photos/3M9WJQVHzog) on [Unsplash](https://unsplash.com/)'
+image_caption: 'Photo by [Ian Cohee]'
 ---
 
 Wall of bleh.
