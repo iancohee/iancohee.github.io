@@ -33,7 +33,7 @@ The program's basic functionality is
 The vulnerability in this application is the use of `strcpy` to move random bytes
 into the `random_key` memory.
 
-According to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte, first, because `strcpy` will overwrite it's own null bytes if we start from the lowest byte.
+According to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte, first, because `strcpy` will overwrite previously written null bytes if we start from the lowest byte.
 
 ## Hints
 1. The GDB command `x/32bx &random_key` shows the bytes used for the key. Watch it change as the program generates key keys of various lengths.
