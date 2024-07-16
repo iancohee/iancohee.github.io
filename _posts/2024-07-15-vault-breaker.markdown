@@ -18,7 +18,7 @@ With some GDB-fu and manual dynamic analysis we can reverse engineer a way to ge
 The program's basic functionality is
 1. Generate a random 32 byte key by reading `/dev/urandom`
 2. Present the user with a menu
-3. If the user enters `1` we enter a key generation routine
+3. If the user enters `1`, we enter a key generation routine
     * Users control the length of the new key
     * The same place in memory is used, every time
     * After the routine we return to the original menu
@@ -33,7 +33,7 @@ The program's basic functionality is
 The vulnerability in this application is the use of `strcpy` to move random bytes
 into the `random_key` memory.
 
-Occording to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte, first, because `strcpy` will overwrite it's own null bytes if we start from the lowest byte.
+According to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte, first, because `strcpy` will overwrite it's own null bytes if we start from the lowest byte.
 
 ## Hints
 1. The GDB command `x/32bx &random_key` shows the bytes used for the key. Watch it change as the program generates key keys of various lengths.
