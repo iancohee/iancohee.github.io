@@ -16,8 +16,10 @@ With some GDB-fu and manual dynamic analysis we can reverse engineer a way to ge
 
 ## The Program
 The program's basic functionality is
-1. Generate a random 32 byte key by reading `/dev/urandom`
-2. Present the user with a menu
+1. Generate a random 32 byte key by reading `/dev/urandom` and store it in memory. The binary is PIE but we don't need to know *where* it's stored, for this challenge.
+![random key]({{site.baseURL}}/images/vault_breaker/Screenshot_2024-07-15_random_key.png)
+*offset of random key in binary*
+2. Present the user with a simple 2-option menu
 3. If the user enters `1`, we enter a key generation routine
     * Users control the length of the new key
     * The same place in memory is used, every time
@@ -25,7 +27,7 @@ The program's basic functionality is
 4. If `2` is entered
     * the 32 bytes stored in memory is used to byte-wise XOR the flag
     * the result is printed
-    * Any byte XOR'd with `0` is itself ;)
+    * Any byte XOR'd with `0` is itself >;)
 
 ![XOR'd flag]({{site.baseURL}}/images/vault_breaker/Screenshot_2024-07-15_3.png)
 *flag.txt "encrypted" with random bytes*
@@ -33,10 +35,10 @@ The program's basic functionality is
 The vulnerability in this application is the use of `strcpy` to move random bytes
 into the `random_key` memory.
 
-According to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte, first, because `strcpy` will overwrite previously written null bytes if we start from the lowest byte.
+According to [man pages](https://man7.org/linux/man-pages/man3/strcpy.3.html) for `man (3) strcpy`, the resulting string is null-terminated. We can abuse this behavior to zero the key used to XOR the flag. The trick is to zero the memory highest byte first, because `strcpy` will overwrite previously written null bytes if we start from the lowest byte.
 
 ## Hints
-1. The GDB command `x/32bx &random_key` shows the bytes used for the key. Watch it change as the program generates key keys of various lengths.
+1. The GDB command `x/32bx &random_key` shows the bytes used for the key. Watch it change as the program generates keys of various lengths.
 2. Set the key from the highest byte, first (31, 30, 29, ...)
 
 ![paused execution]({{site.baseUrl}}/images/vault_breaker/Screenshot_2024-07-15_2.png)
