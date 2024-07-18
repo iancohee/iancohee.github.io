@@ -13,7 +13,7 @@ Who likes writing about themselves? Really.
 
 Things I **do** like are
 * music
-* technology/computers/AI/hacking
+* technology/computers/AI/hacking all the things!
 * weight lifting
 
 I regularly play guitar, bass, and scottish bagpipes (highland and small). Metal is the superior genre. Not any particular subgenre, just all of them are better than almost anything else 🤘🏻.
