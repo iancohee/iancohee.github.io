@@ -18,7 +18,7 @@ Things I **do** like are
 
 I regularly play guitar, bass, and scottish bagpipes (highland and small). Metal is the superior genre. Not any particular subgenre, just all of them are better than almost anything else 🤘🏻.
 
-I like to think I can hack things and make things 🙁. I have been branching off of Arudino and writting Flipper Zero apps to learn that platform. Stay tuned for more.
+I like to think I can hack things and make things 🙁. I have been branching off of Arudino and writing Flipper Zero apps to learn that platform. Stay tuned for more.
 
 Not super strong. Not super jacked. But I lift 5 days/week and love learning about the science and execution of lifting.
 
