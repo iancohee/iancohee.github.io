@@ -30,10 +30,10 @@ author:
   author__avatar: '/images/self.png'
 
 social:
-- {icon: "ion-logo-twitter", link: "https://twitter.com"}
-- {icon: "ion-logo-facebook", link: "https://facebook.com"}
-- {icon: "ion-logo-instagram", link: "https://instagram.com"}
-- {icon: "ion-logo-pinterest", link: "https://pinterest.com"}
+#- {icon: "ion-logo-twitter", link: "https://twitter.com"}
+#- {icon: "ion-logo-facebook", link: "https://facebook.com"}
+- {icon: "ion-logo-instagram", link: "https://www.instagram.com/hack.lift.shred/"}
+# - {icon: "ion-logo-pinterest", link: "https://pinterest.com"}
 - {icon: "ion-logo-github", link: "https://github.com/iancohee"}
 - {icon: "ion-logo-vimeo", link: "https://vimeo.com"}
 
@@ -47,7 +47,7 @@ hero:
   enable: true
   hero__title: Hello, I’m Ian Shannon Cohee.
   hero__description: |
-    Hi, Ian – Developer. I'm a creative and curious person who has a lot of experience and fond moments 
+    Hi, I'm Ian – Developer and Hacker. I'm a creative person who has a lot of experience 
     working with software, software security, homemade electronics, playing metal music, and weight lifting.
 
   hero__image: "/images/01-1.jpg"
