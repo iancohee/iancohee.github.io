@@ -21,9 +21,9 @@ The program's basic functionality is
 *offset of random key in binary*
 2. Present the user with a simple 2-option menu
 3. If the user enters `1`, we enter a key generation routine
-    * Users control the length of the new key
-    * The same place in memory is used, every time
-    * After the routine we return to the original menu
+    * users control the length of the new key
+    * the same place in memory is used, every time
+    * after the routine we return to the original menu
 4. If `2` is entered
     * the 32 bytes stored in memory is used to byte-wise XOR the flag
     * the result is printed
