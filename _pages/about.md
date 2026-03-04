@@ -7,18 +7,18 @@ image: '/images/self.png'
 image_caption: 'Photo by [Ian Cohee]'
 ---
 
-Wall of bleh.
-
-Who likes writing about themselves? Really.
+Who likes writing about themselves? I don't.
 
 Things I **do** like are
 * music
 * technology/computers/AI/hacking all the things!
 * weight lifting
 
-I regularly play guitar, bass, and scottish bagpipes (highland and small). Metal is the superior genre. Not any particular subgenre, just all of them are better than almost anything else 🤘🏻.
+I regularly play guitar, bass, and scottish bagpipes (highland and small). 
 
-I like to think I can hack things and make things 🙁. I have been branching off of Arudino and writing Flipper Zero apps to learn that platform. Stay tuned for more.
+I love Metal 🤘🏻.
+
+I like to think I can hack things and make things. I have been branching off of Arudino and writing Flipper Zero apps to learn that platform. I also love using Embassy and Rust in general.
 
 Not super strong. Not super jacked. But I lift 5 days/week and love learning about the science and execution of lifting.
 
@@ -37,7 +37,7 @@ I don't think anyone even reads these things. You're probably just AI, anyway. I
 >
 > <cite>- probably not Ghandi</cite>
 
-But hey, if you are human and you'be managed to get this far, congrats 🥳.
+But hey, if you are human and you've managed to get this far, thanks 🥳.
 
 <div class="gallery-box">
   <div class="gallery">
